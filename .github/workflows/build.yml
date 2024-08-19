@@ -1,0 +1,54 @@
+on:
+  schedule:
+    - cron: "0 */1 * * *" # At minute 0 past every hour.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  index:
+    name: index add lunar
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get files from repository
+        uses: actions/checkout@v4
+
+      - name: Print info
+        run: |
+          echo "--------------------------------------------------"
+          cd ${{ github.workspace }}
+          ls
+          echo "nodejs version: $(node -v)"
+          echo "npm version: $(npm -v)"
+          echo "--------------------------------------------------"
+
+        shell: bash
+
+      - name: Add lunar info
+        run: |
+          mkdir workspace
+          cp ./style/js/main.js ./workspace/main.bak.js
+          echo "print('null info')" > ./workspace/main.py
+          echo $(node ./style/js/lunar.js) > ./workspace/lunar-info.txt
+          cat ./workspace/lunar-info.txt
+        shell: bash
+
+      - name: Generate index
+        run: |
+          cd ./workspace
+          python ./main.py
+          rm ${{ github.workspace }}/style/js/main.js
+          mv ./main.js ${{ github.workspace }}/style/js/main.js
+          rm -rf ${{ github.workspace }}/workspace
+        shell: bash
+
+      - name: Deploy pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+          branch: main
+          folder: ${{ github.workspace }}
+          git-config-name: ${{ github.actor }}
+          git-config-email: ${{ secrets.GIT_EMAIL }}
