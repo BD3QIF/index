@@ -1,5 +1,6 @@
-window.onload = () => {console.log('二〇二四年 七月(大) 十六 星期一 甲辰(龙)年 壬申月 乙卯日 辛巳时 立秋 距离处暑还有3天');}
+window.onload = () => {let lunar_info='二〇二四年 七月(大) 十六 星期一 甲辰(龙)年 壬申月 乙卯日 辛巳时 立秋 距离处暑还有3天'; console.log(lunar_info);}
 window.addEventListener('load', () => {
+    console.log($)
     $('h1').addClass('ready');
     $('.bio').addClass('ready');
     $('li').addClass('ready');
@@ -9,8 +10,28 @@ document.addEventListener('mousemove', (e) => {
     // $('h1').setStyle(`transform`, `translate(${-10 + 20 * offsetX}px,${-10 + 20 * offsetY}px)`);
     $('.bio').setStyle(`transform`, `translate(${5 - 10 * offsetX}px,${-5 + 10 * offsetY}px)`);
 });
-const sheet = document.styleSheets[0];
-console.log(sheet)
+
+
+// window.addEventListener('load', () => {
+//     document.querySelectorAll('h1').forEach(function(element) {
+//         element.classList.add('ready');
+//     });
+//     document.querySelectorAll('.bio').forEach(function(element) {
+//         element.classList.add('ready');
+//     });
+//     document.querySelectorAll('li').forEach(function(element) {
+//         element.classList.add('ready');
+//     });
+// });
+// document.addEventListener('mousemove', (e) => {
+//     const [offsetX, offsetY] = [e.x / document.body.clientWidth, e.y / document.body.clientHeight];
+//     document.querySelectorAll('.bio').forEach(function(element) {
+//         element.style.transform = `translate(${5 - 10 * offsetX}px, ${5 - 10 * offsetY}px)`;
+//     });
+//     // document.querySelectorAll('h1').forEach(function(element) {
+//     //     element.style.transform = `translate(${-10 + 20 * offsetX}px, ${-10 + 20 * offsetY}px)`;
+//     // });
+// });
 
 /*background*/
 const timer = 350;
@@ -98,7 +119,7 @@ class Rail {
         return this;
     }
 
-    getOrigionalElement(idx) {
+    getOriginalElement(idx) {
         if (!!idx) return this.ele[idx];
         return this.ele;
     }
