@@ -1,4 +1,4 @@
-window.onload = () => {let lunar_info='二〇二四年 七月(大) 十六 星期一 甲辰(龙)年 壬申月 乙卯日 辛巳时 立秋 距离处暑还有3天'; console.log(lunar_info);}
+window.onload = () => {console.log('二〇二四年 七月(大) 十六 星期一 甲辰(龙)年 壬申月 乙卯日 壬午时 立秋 距离处暑还有3天');}
 window.addEventListener('load', () => {
     console.log($)
     $('h1').addClass('ready');
