@@ -1,4 +1,4 @@
-window.onload = () => {console.log('二〇二四年 七月(大) 十八 星期三 甲辰(龙)年 壬申月 丁巳日 丁未时 立秋 距离处暑还有1天');}
+window.onload = () => {console.log('二〇二四年 七月(大) 十八 星期三 甲辰(龙)年 壬申月 丁巳日 戊申时 立秋 距离处暑还有1天');}
 window.addEventListener('load', () => {
     console.log($)
     $('h1').addClass('ready');
