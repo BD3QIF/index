@@ -1,4 +1,4 @@
-window.onload = () => {console.log('二〇二四年 八月(大) 初六 星期日 甲辰(龙)年 癸酉月 乙亥日 丙戌时 白露 距离秋分还有14天');}
+window.onload = () => {console.log('二〇二四年 八月(大) 初六 星期日 甲辰(龙)年 癸酉月 乙亥日 丁亥时 白露 距离秋分还有14天');}
 window.addEventListener('load', () => {
     console.log($)
     $('h1').addClass('ready');
