@@ -1,4 +1,4 @@
-window.onload = () => {console.log('二〇二五年 正月(大) 十五 星期三 乙巳(蛇)年 戊寅月 壬子日 丁未时 立春 距离雨水还有6天');}
+window.onload = () => {console.log('二〇二五年 正月(大) 十五 星期三 乙巳(蛇)年 戊寅月 壬子日 戊申时 立春 距离雨水还有6天');}
 window.addEventListener('load', () => {
     $('h1').addClass('ready');
     $('.bio').addClass('ready');
