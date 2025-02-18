@@ -1,4 +1,4 @@
-window.onload = () => {console.log('二〇二五年 正月(大) 廿一 星期二 乙巳(蛇)年 戊寅月 戊午日 甲子时 雨水* 距离惊蛰还有-15天');}
+window.onload = () => {console.log('二〇二五年 正月(大) 廿二 星期三 乙巳(蛇)年 戊寅月 己未日 甲子时 雨水 距离惊蛰还有-16天');}
 window.addEventListener('load', () => {
     $('h1').addClass('ready');
     $('.bio').addClass('ready');
