@@ -1,4 +1,4 @@
-window.onload = () => {console.log('二〇二五年 二月(小) 廿四 星期日 乙巳(蛇)年 己卯月 辛卯日 庚子时 春分 距离清明还有-18天');}
+window.onload = () => {console.log('二〇二五年 二月(小) 廿五 星期一 乙巳(蛇)年 己卯月 壬辰日 庚子时 春分 距离清明还有-19天');}
 window.addEventListener('load', () => {
     $('h1').addClass('ready');
     $('.bio').addClass('ready');
