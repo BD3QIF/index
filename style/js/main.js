@@ -1,4 +1,4 @@
-window.onload = () => {console.log('二〇二五年 三月(大) 十七 星期一 乙巳(蛇)年 庚辰月 癸丑日 壬戌时 清明 距离谷雨还有6天');}
+window.onload = () => {console.log('二〇二五年 三月(大) 十七 星期一 乙巳(蛇)年 庚辰月 癸丑日 癸亥时 清明 距离谷雨还有6天');}
 window.addEventListener('load', () => {
     $('h1').addClass('ready');
     $('.bio').addClass('ready');
