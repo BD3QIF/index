@@ -1,4 +1,4 @@
-window.onload = () => {console.log('二〇二五年 五月(小) 初五 星期六 乙巳(蛇)年 辛巳月 庚子日 己卯时 小满 距离芒种还有-26天');}
+window.onload = () => {console.log('二〇二五年 五月(小) 初五 星期六 乙巳(蛇)年 辛巳月 庚子日 庚辰时 小满 距离芒种还有-26天');}
 window.addEventListener('load', () => {
     $('h1').addClass('ready');
     $('.bio').addClass('ready');
