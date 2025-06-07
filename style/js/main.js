@@ -1,4 +1,4 @@
-window.onload = () => {console.log('二〇二五年 五月(小) 十三 星期日 乙巳(蛇)年 壬午月 戊申日 乙卯时 芒种 距离夏至还有13天');}
+window.onload = () => {console.log('二〇二五年 五月(小) 十三 星期日 乙巳(蛇)年 壬午月 戊申日 丙辰时 芒种 距离夏至还有13天');}
 window.addEventListener('load', () => {
     $('h1').addClass('ready');
     $('.bio').addClass('ready');
